@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0"> 
+<title>Registro de tienda XEnonStore</title>
+    <!-- Estilos CSS vinculados -->
+    
+    
+
+    
+
+    <!--Librerias-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet"  href="css/estiloFormulario.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script scr="js/jsContenido.js"></script>
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/Jquery.js"></script>
+    <script >
+        $(function(){
+            $('input').blur(function(e) {
+    var pass = $('input[name=fPass1]').val();
+    var repass = $('input[name=fPass2]').val();
+    if(($('input[name=password]').val().length == 0) || ($('input[name=fPass2]').val().length == 0)){
+        $('#fPass1').addClass('has-error');
+    }
+    else if (pass != repass) {
+        $('#fPass1').addClass('has-error');
+        $('#fPass2').addClass('has-error');
+    }
+    else {
+        $('#fPass1').removeClass().addClass('has-success');
+        $('#fPass2').removeClass().addClass('has-success');
+    }
+});
+             $('#bEnviar').click(function(e) {
+                $("#prinConta").css("visibility","hidden");
+             });
+
+
+           
+
+             
+          
+        
+        )};
+    </script>
+    </head>
+
+<body>
+  <div class="container" id="prinConta">
+    <div class="page-header">
+       <h1>Bienvenido a XEnonStore</h1>
+       <p>Por favor brinde toda la informacion solicitada</p>
+    </div>
+
+
+
+<form class="form-horizontal" id="formulario">
+ <div class="form-group">
+        <label class="control-label col-xs-3" >Correo Electronico:</label>
+        <div class="col-xs-9">
+            <input type="email" id="fCorreo" class="form-control" placeholder="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required/>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-xs-3">Password:</label>
+        <div class="col-xs-9">
+            <input type="password" name="fPass1" class="form-control" id="inputPassword" placeholder="Password" required/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3">Confirmar Password:</label>
+        <div class="col-xs-9">
+            <input type="password" name="fPass2" class="form-control" placeholder="Confirmar Password" required/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3">Nombre:</label>
+        <div class="col-xs-9">
+            <input type="text" id="fNombre" class="form-control" placeholder="Nombre" required/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3">Apellido:</label>
+        <div class="col-xs-9">
+            <input type="text" class="form-control" placeholder="Apellido" required/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3" >Telefono:</label>
+        <div class="col-xs-9">
+            <input type="tel" class="form-control" placeholder="Telefono">
+        </div>
+    </div>
+    <div class="form-group">
+
+    <div class="form-group">
+        <label class="control-label col-xs-3">F. Nacimiento:</label>
+        
+        <div class="col-xs-3">
+            <select class="form-control" placeholder="Dia">
+
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+                <option >12</option>
+                <option >13</option>
+                <option >14</option>
+                <option >15</option>
+                <option >16</option>
+                <option >17</option>
+                <option >18</option>
+                <option >19</option>
+                <option >20</option>
+                <option >21</option>
+                <option >22</option>
+                <option >24</option>
+                <option >25</option>
+                <option >26</option>
+                <option >27</option>
+                <option >28</option>
+                <option >29</option>
+                <option >30</option>
+                <option >31</option>
+            </select>
+        </div>
+        <div class="col-xs-3">
+            <select class="form-control" placeholder="Mes">
+                
+                 <option >Enero</option>
+                  <option >Febrero</option>
+                   <option >Marzo</option>
+                    <option >Abril</option>
+                     <option >Mayo</option>
+                      <option >Junio</option>
+                      <option >Julio</option>
+                      <option >Agosto</option>
+                      <option >Septiembre</option>
+                      <option >Octubre</option>
+                      <option >Noviembre</option>
+                      <option >Diciembre</option>
+            </select>
+        </div>
+        <div class="col-xs-3">
+            <select class="form-control">
+                <option class="disabled">Año</option>
+                 
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3">Ubicacion:</label>
+        <div class="col-xs-3">
+            <select class="form-control">
+                <option>Provincia</option>
+                <option>Provincia</option>
+            </select>
+        </div>
+        <div class="col-xs-3">
+            <select class="form-control">
+                <option>Canton</option>
+            </select>
+        </div>
+        <div class="col-xs-3">
+            <select class="form-control">
+                <option>Distrito</option>
+            </select>
+        </div>
+        <br>
+        
+    </div>
+    <div class="form-group">
+      <label class="control-label col-xs-3">Descripcion:</label>
+        <div class="col-xs-9">
+            <textarea rows="3" class="form-control" placeholder="Dirección"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3">Imagen:</label>
+        <div class="col-xs-9">
+            
+                <input name="fotoPerfil" type="file" size="20"> 
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-3">Genero:</label>
+        <div class="col-xs-2">
+            <label class="radio-inline">
+                <input type="radio" name="genderRadios" value="male"> Maculino
+            </label>
+        </div>
+        <div class="col-xs-2">
+            <label class="radio-inline">
+                <input type="radio" name="genderRadios" id="fFemenino" value="female"> Femenino
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+            <label class="checkbox-inline">
+                <input type="checkbox" value="news"> Enviar noticias.
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+            <label class="checkbox-inline">
+                <input type="checkbox" value="agree">  Accepto <a href="#" required/>Terminos y condiciones</a>.
+            </label>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+            <input type="submit" class="btn btn-primary" id="bEnviar" value="Enviar">
+            <input type="reset" id="bLimpiar" class="btn btn-default" value="Limpiar">
+        </div>
+    </div>
+
+</form>
+    
+
+</div>
+<br>
+
+
+<!-- Js vinculados -->
+   
+</body>
+<footer>
+    <p id="textofinal">www.XenonStore.cr</p>
+</footer>
+</html>

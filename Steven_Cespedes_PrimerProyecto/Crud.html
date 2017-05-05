@@ -1,0 +1,226 @@
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet"  href="css/estiloCrud.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script scr="js/jsContenido.js"></script>
+  <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/Jquery.js"></script>
+   <script scr="js/jsTabla.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<div clas="row" id="CrudTele">
+     <div class="col-sm-2">
+       <div class="list-group">
+         <a href="#" class="list-group-item disabled">Fabricantes</a>
+         <a href="#" class="list-group-item">APPLE</a>
+         <a href="#" class="list-group-item">HUAWEI</a>
+         <a href="#" class="list-group-item">SAMSUNG</a>
+         <a href="#" class="list-group-item">SONY</a>
+          <a href="#" class="list-group-item disabled"> Pagina principal</a>
+           <a href="#" class="list-group-item ">Novedades</a>
+           
+             <a href="#" class="list-group-item ">Ofertas</a>
+       </div>
+       </div>
+
+      <div class="col-md-5"> 
+      <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">Dispositivos</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-md-12 well">
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#nuevoDispositivo"><i class="fa fa-fw -square -circle fa-plus-square"></i> Dispositivo nuevo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-hover table-striped">
+                            <tbody>
+                             <tr>
+                             <th></th>
+                             <th> Marca y modelo</th>
+                             <th> Imagen</th>
+                             <th>Nombre y precio</th>
+                             <th>Colores</th>
+                             <th>Descripcion</th>
+                             <th>Acciones</th>
+
+                               
+                             </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#"><span class="glyphicon glyphicon-phone">
+                                          
+                                        </span> </a>
+                                    </td>
+                                    <td>
+                                        <h4>
+                                            <b>SONY</b>
+                                        </h4>
+                                        <p>Z1-67fh</p>
+                                    </td>
+                                    <td>
+                                        <img src="http://api.sonymobile.com/files/xperia-Z1-hero-white-1240x840-f9b9916d16a90faba4e6e2fc3de5e289.jpg" class="img-circle" width="60">
+                                    </td>
+                                    <td>
+                                        <h4>
+                                            <b>Sony Z1</b>
+                                        </h4>
+                                        <b href="">150.000</b>
+                                    </td>
+                                    <td>
+                                    <ul>
+                                      <li>Negro
+                                      </li>
+                                      <li>Blanco</li>
+                                    </ul>
+
+                                    </td>
+                                    <td>
+                                     <textarea si>
+                                       
+                                     </textarea>
+                                      
+                                    </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-default" value="left" type="button">
+                                                <i class="fa fa-fw s fa-remove"></i>Eliminar</button>
+                                            <button class="btn btn-default" value="right" type="button">
+                                                <i class="fa fa-fw fa-cog"></i>Editar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                
+                              
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fade modal" id="nuevoDispositivo">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h2 class="modal-title" id="myModalLabel">Nuevo dispositivo</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <!-- Form Name -->
+                                <!-- Prepended text-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="prependedtext">Modelo</label>
+                                    <div class="col-md-5">
+                                        <div class="input-group">
+                                            
+                                            <input id="prependedtext" name="prependedtext" class="form-control" placeholder="Nombre de modelo" type="text" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Prepended text-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="nombre">Nombre</label>
+                                    <div class="col-md-5">
+                                        <div class="input-group">
+                                            
+                                            <input id="nombre" name="nombre" class="form-control" placeholder="Nombre " type="text" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Appended Input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="email">Precio</label>
+                                    <div class="col-md-5">
+                                        <div class="input-group">
+                                            <input id="precio" name="precio" class="form-control" placeholder="precio" type="text" required="">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Select Basic -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="departamento">Fabricante</label>
+                                    <div class="col-md-5">
+                                        <select id="fabricante" name="fabricante" class="form-control">
+                                            <option value="1">APPLE</option>
+                                            <option value="2">HUAWEI</option>
+                                            <option value="3">SAMSUNG</option>
+                                            <option value="4">SONY</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                <label class="col-md-4 control-label">COLOREZ</label>
+                                <div class="col-md-5">
+                                   <div class="checkbox">
+                                       <label><input type="checkbox"
+                                         value="">Blanco</label>
+                                       </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="">Negro</label>
+                                      </div>
+                                    <div class="checkbox ">
+                                          <label><input type="checkbox" value="">Dorado</label>
+                                    </div>
+                                    <div class="checkbox">
+                                          <label><input type="checkbox" value="">Plateado</label>
+                                    </div>
+
+
+                                  
+                                </div>
+                                  
+                                </div>
+                                <!-- File Button -->
+                                <!-- Password input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" >Descripcion</label>
+                                    <div class="col-md-5">
+                                        <textarea id="descripcion" name="descripcion" type="tex" placeholder="Descripcion" class="form-control input-md" required=""></textarea>
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group">
+                                   <label class="col-md-4 control-label" >Imagen</label>
+                                   <div class="col-md-5">
+                                        <input name="fotoPerfil" type="file" size="13"> 
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4"></label>
+                                   <label class="col-md-4">
+                                     <button type="submit" class="btn btn-primary">
+                                        <i class="fa fa-fw fa-save"></i>Guardar</button>
+                                   </label>
+                                  
+                                </div>
+
+                                <!-- Button -->
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>    
+

@@ -1,0 +1,245 @@
+@CHARSET "UTF-8";
+/*
+over-ride "Weak" message, show font in dark grey
+*/
+
+.progress-bar {
+    color: #333;
+}
+#formulario{
+  background: url() no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+}
+#principal{
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 100px;
+}
+
+#bloqueA{
+	
+   
+
+ 
+    
+}
+#bloqueB{
+	margin-top: 1px;
+    
+}
+#bloqueC{
+	margin-top: 1px;
+	
+    
+   
+}
+#bloqueD{
+	margin-top: 1px;
+
+   
+}
+#bloque-1{
+	border-top-width: thin;
+  border-right-width: thin;
+  border-bottom-width: thin;
+  border-left-width: thin;
+	color: #fff;
+   background-color: rgba(25,25,27,0.3);
+
+   
+}
+#bloque-2{
+	border-top-width: thin;
+  border-right-width: thin;
+  border-bottom-width: thin;
+  border-left-width: thin;
+	color: #fff;
+   background-color: rgba(25,25,27,0.3);
+   
+}
+
+
+/*
+Reference:
+http://www.bootstrapzen.com/item/135/simple-login-form-logo/
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	outline: none;
+}
+
+    .form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+		@include box-sizing(border-box);
+
+		&:focus {
+		  z-index: 2;
+		}
+	}
+
+body {
+	background:url(http://www.wallpapersxl.com/wallpapers/1280x800/turquesa/1129844/turquesa-fondos-de-pantalla-fondo-oscuro-tama-o-x-1129844.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+#contenidoCentral{
+	color: blue;
+	margin-top: 10%;
+	margin-left: 60%;
+	position: relative;
+}
+#parteInferior{
+	background: #171515;
+	
+}
+#futInformacion1{
+	margin-left: 120px;
+	
+}
+
+
+#Novedades{
+ color: #fff;
+   background-color: rgba(25,25,27,0.3);}
+
+#Ofertas{
+	color: #fff;
+   background-color: rgba(25,25,27,0.3);
+
+
+
+}
+#textofinal{
+	text-align: center;
+	font-size: 50px;
+	color:#444444;
+
+}
+
+#bloqueAA{
+	background-color: #3779DC; 
+	color: #444444;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+
+}
+#bloqueBB{
+	background-color: #3779DC; 
+	color: #444444;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+#bloqueCC{
+	background-color: #3779DC; 
+	color: #444444;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+#bloqueDD{
+	background-color: #3779DC; 
+	color: #444444;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+
+h5{
+	color: #9C9C9C;
+	font-weight: bold;
+	font-size: 20px;
+}
+h1{
+	margin-left:20px;
+}
+
+#diSan,#diApple,#diSony,#diHua{
+	color: #fff;
+   background-color: rgba(25,25,27,0.3);
+   
+   
+
+	}
+
+h1.yo{
+color: White;
+	text-align: center;
+}
+
+
+
+p.yo2{
+	color: White;
+	font-size:25px; 
+	text-align: center;
+
+}
+
+div.caption{
+background: -webkit-linear-gradient(#119FBB, #D3DA4B);
+   background: -moz-linear-gradient(#119FBB, #D3DA4B);
+   background: -o-linear-gradient(#119FBB, #D3DA4B);
+
+	
+	color: #444444;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	 border-top-style: inset;
+  border-right-style: inset;
+  border-bottom-style: inset;
+  border-left-style: inset;
+
+}
+.form-horizontal{
+	background-color: Black;
+}
+#listas{
+	color: #fff;
+   background-color: rgba(25,25,27,0.3);
+}
+
+
+#diProductos{
+	display: none;
+	 visibility: hidden;
+	
+
+}
+#CrudTele{
+	background: White;
+	display: none;
+	 visibility: hidden;
+}
+
+#listaHUaWEI,#listaSONY,#listaSamsung,#listaNovedades,#listaAPPLE,#CrudTele{
+    display: none;
+	 visibility: hidden;
+	
+}
+#modConRegis{
+	background: White;
+}
+
+

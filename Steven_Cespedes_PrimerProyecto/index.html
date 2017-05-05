@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>XENON Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    
+
+	<!--Librerias-->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet"  href="css/estilos.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script scr="js/jsContenido.js"></script>
+	<script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/Jquery.js"></script>
+    <script src="bootstrap/js/js/Tabla.js"></script>
+    
+
+<script>
+	$(function(){
+		$("#bInicio").click(function(evento){
+   	         if ($('#productosS').is(':visible')){
+   	      	$("#diProductos").css("visibility","hidden");
+            $("#diProductos").css("display","none");}
+            
+             
+
+
+
+   	      	
+
+
+
+
+
+            $("#principal").css("visibility", "visible");
+          $("#principal").css("display","block");
+          
+         
+   	      });
+
+
+   $("#productosS").click(function(evento){
+      
+         $("#principal").css("visibility", "hidden");
+          $("#principal").css("display","none");
+
+
+         $("#diProductos").css("visibility","visible");
+         $("#diProductos").css("display","block");
+      
+         
+    
+   });
+
+   //cambio pestañas de marcas
+   $("#etiSAMSUNG").click(function(evento){
+   	  if ($('#listaOfertas').is(':visible')){
+   	      	$("#listaOfertas").css("visibility","hidden");
+            $("#listaOfertas").css("display","none")
+            $("#listaSamsung").css("visibility","visible");
+            $("#listaSamsung").css("display","block");
+            ;}
+
+       if ($('#listaNovedades').is(':visible')){
+   	      	$("#listaNovedades").css("visibility","hidden");
+            $("#listaNovedades").css("display","none");
+
+             $("#listaSamsung").css("visibility","visible");
+            $("#listaSamsung").css("display","block");
+        }
+
+        if ($('#listaAPPLE').is(':visible')){
+   	      	$("#listaAPPLE").css("visibility","hidden");
+            $("#listaAPPLE").css("display","none");
+             $("#listaSamsung").css("visibility","visible");
+            $("#listaSamsung").css("display","block");
+        }
+
+         if ($('#listaSONY').is(':visible')){
+   	      	$("#listaSONY").css("visibility","hidden");
+            $("#listaSONY").css("display","none");
+            $("#listaSamsung").css("visibility","visible");
+            $("#listaSamsung").css("display","block");
+        }
+    
+         if ($('#listaHUaWEI').is(':visible')){
+   	      	$("#listaHUaWEI").css("visibility","hidden");
+            $("#listaHUaWEI").css("display","none");
+            $("#listaSamsung").css("visibility","visible");
+            $("#listaSamsung").css("display","block");
+        } 
+
+        
+	});
+   $("#etiOfertas").click(function(evento){
+   	  if ($('#listaSamsung').is(':visible')){
+   	      	$("#listaSamsung").css("visibility","hidden");
+            $("#listaSamsung").css("display","none")
+            $("#listaOfertas").css("visibility","visible");
+            $("#listaOfertas").css("display","block");
+            ;}
+
+       if ($('#listaNovedades').is(':visible')){
+   	      	$("#listaNovedades").css("visibility","hidden");
+            $("#listaNovedades").css("display","none");
+             $("#listaOfertas").css("visibility","visible");
+            $("#listaOfertas").css("display","block");
+        }
+
+        if ($('#listaAPPLE').is(':visible')){
+   	      	$("#listaAPPLE").css("visibility","hidden");
+            $("#listaAPPLE").css("display","none");
+             $("#listaOfertas").css("visibility","visible");
+            $("#listaOfertas").css("display","block");
+        }
+
+         if ($('#listaSONY').is(':visible')){
+   	      	$("#etiSONY").css("visibility","hidden");
+            $("#etiSONY").css("display","none");
+            $("#listaOfertas").css("visibility","visible");
+            $("#listaOfertas").css("display","block");
+        }
+    
+         if ($('#listaHUaWEI').is(':visible')){
+   	      	$("#listaHUaWEI").css("visibility","hidden");
+            $("#listaHUaWEI").css("display","none");
+            $("#listaOfertas").css("visibility","visible");
+            $("#listaOfertas").css("display","block");
+        } 
+
+	});
+
+   $("#etiNovedades").click(function(evento){
+   	  if ($('#listaSamsung').is(':visible')){
+   	      	$("#listaSamsung").css("visibility","hidden");
+            $("#listaSamsung").css("display","none")
+            $("#listaNovedades").css("visibility","visible");
+            $("#listaNovedades").css("display","block");
+            ;}
+
+       if ($('#listaOfertas').is(':visible')){
+   	      	$("#listaOfertas").css("visibility","hidden");
+            $("#listaOfertas").css("display","none");
+             $("#listaNovedades").css("visibility","visible");
+            $("#listaNovedades").css("display","block");
+        }
+
+        if ($('#listaAPPLE').is(':visible')){
+   	      	$("#listaAPPLE").css("visibility","hidden");
+            $("#listaAPPLE").css("display","none");
+             $("#listaNovedades").css("visibility","visible");
+            $("#listaNovedades").css("display","block");
+        }
+
+         if ($('#listaSONY').is(':visible')){
+   	      	$("#listaSONY").css("visibility","hidden");
+            $("#listaSONY").css("display","none");
+            $("#listaNovedades").css("visibility","visible");
+            $("#listaNovedades").css("display","block");
+        }
+    
+         if ($('#listaHUaWEI').is(':visible')){
+   	      	$("#listaHUaWEI").css("visibility","hidden");
+            $("#listaHUaWEI").css("display","none");
+            $("#listaNovedades").css("visibility","visible");
+            $("#listaNovedades").css("display","block");
+        } 
+
+	});
+        $("#etiSONY").click(function(evento){
+   	  if ($('#listaSamsung').is(':visible')){
+   	      	$("#listaSamsung").css("visibility","hidden");
+            $("#listaSamsung").css("display","none")
+            $("#listaSONY").css("visibility","visible");
+            $("#listaSONY").css("display","block");
+            ;}
+
+       if ($('#listaOfertas').is(':visible')){
+   	      	$("#listaOfertas").css("visibility","hidden");
+            $("#listaOfertas").css("display","none");
+             $("#listaSONY").css("visibility","visible");
+            $("#listaSONY").css("display","block");
+        }
+
+        if ($('#listaAPPLE').is(':visible')){
+   	      	$("#listaAPPLE").css("visibility","hidden");
+            $("#listaAPPLE").css("display","none");
+             $("#listaSONY").css("visibility","visible");
+            $("#listaSONY").css("display","block");
+        }
+
+         if ($('#listaNovedades').is(':visible')){
+   	      	$("#listaNovedades").css("visibility","hidden");
+            $("#listaNovedades").css("display","none");
+            $("#listaSONY").css("visibility","visible");
+            $("#listaSONY").css("display","block");
+        }
+    
+         if ($('#listaHUaWEI').is(':visible')){
+   	      	$("#listaHUaWEI").css("visibility","hidden");
+            $("#listaHUaWEI").css("display","none");
+            $("#listaSONY").css("visibility","visible");
+            $("#listaSONY").css("display","block");
+        } 
+
+	});
+            $("#etiHUaWEI").click(function(evento){
+   	  if ($('#listaSamsung').is(':visible')){
+   	      	$("#listaSamsung").css("visibility","hidden");
+            $("#listaSamsung").css("display","none")
+            $("#listaHUaWEI").css("visibility","visible");
+            $("#listaHUaWEI").css("display","block");
+            ;}
+
+       if ($('#listaOfertas').is(':visible')){
+   	      	$("#listaOfertas").css("visibility","hidden");
+            $("#listaOfertas").css("display","none");
+             $("#listaHUaWEI").css("visibility","visible");
+            $("#listaHUaWEI").css("display","block");
+        }
+
+        if ($('#listaAPPLE').is(':visible')){
+   	      	$("#listaAPPLE").css("visibility","hidden");
+            $("#listaAPPLE").css("display","none");
+             $("#listaHUaWEI").css("visibility","visible");
+            $("#listaHUaWEI").css("display","block");
+        }
+
+         if ($('#listaNovedades').is(':visible')){
+   	      	$("#listaNovedades").css("visibility","hidden");
+            $("#listaNovedades").css("display","none");
+            $("#listaHUaWEI").css("visibility","visible");
+            $("#listaHUaWEI").css("display","block");
+        }
+    
+         if ($('#listaSONY').is(':visible')){
+   	      	$("#listaSONY").css("visibility","hidden");
+            $("#listaSONY").css("display","none");
+            $("#listaHUaWEI").css("visibility","visible");
+            $("#listaHUaWEI").css("display","block");
+        } 
+
+	});
+
+      $("#etiAPPLE").click(function(evento){
+   	  if ($('#listaSamsung').is(':visible')){
+   	      	$("#listaSamsung").css("visibility","hidden");
+            $("#listaSamsung").css("display","none")
+            $("#listaAPPLE").css("visibility","visible");
+            $("#listaAPPLE").css("display","block");
+            ;}
+
+       if ($('#listaOfertas').is(':visible')){
+   	      	$("#listaOfertas").css("visibility","hidden");
+            $("#listaOfertas").css("display","none");
+             $("#listaAPPLE").css("visibility","visible");
+            $("#listaAPPLE").css("display","block");
+        }
+
+        if ($('#listaHUaWEI').is(':visible')){
+   	      	$("#listaHUaWEI").css("visibility","hidden");
+            $("#listaHUaWEI").css("display","none");
+             $("#listaAPPLE").css("visibility","visible");
+            $("#listaAPPLE").css("display","block");
+        }
+
+         if ($('#listaNovedades').is(':visible')){
+   	      	$("#listaNovedades").css("visibility","hidden");
+            $("#listaNovedades").css("display","none");
+            $("#listaAPPLE").css("visibility","visible");
+            $("#listaAPPLE").css("display","block");
+        }
+    
+         if ($('#listaSONY').is(':visible')){
+   	      	$("#listaSONY").css("visibility","hidden");
+            $("#listaSONY").css("display","none");
+            $("#listaAPPLE").css("visibility","visible");
+            $("#listaAPPLE").css("display","block");
+        } 
+
+	});
+
+
+
+});
+</script>
+
+</head>
+    
+
+
+
+<body>
+<header>
+
+	<nav class="navbar navbar-inverse navbar-static-top" role=navigation>
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bNavegacion">
+				<span class="sr-only">Mostar/ocultar menu movil</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+
+			</button>
+			<a class="navbar-brand">XEnon Store</a>
+		</div>
+		<!--Menu principal-->
+		<div class="collapse navbar-collapse" id="bNavegacion">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#" id="bInicio"><span class="glyphicon glyphicon-home"></span> Start</a></li>
+				<li><a href="#"   id="productosS" ><span class="glyphicon glyphicon-phone"></span> Products</a></li>
+				<li class="dropdown">
+
+				 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" id="bAboutUs"><span class="glyphicon glyphicon-modal-window"></span> About us
+				 <span class="caret"></span></a>
+
+				      <ul class="dropdown-menu" role="menu">
+
+				        <li ><a href="#" id="bMision">Mision</a></li>
+				        <li  class="divider"></li>
+				        <li ><a href="#" id="bVision">Vision</a></li>
+				        <li class="divider"></li>
+				        <li ><a href="#" id="bHistory">History</a></li>
+				      </ul>
+
+				</li>
+
+				<li ><a href="#"  id="bContact"><span class="glyphicon glyphicon-phone-alt"></span> Contact us</a></li>
+				</ul>
+
+			</ul>
+    </form>
+
+    <form class="navbar-form navbar-right">
+      <ul class="nav navbar-nav">
+       <li ><a href="#" id="bCarrito" data-target="#Carrito" data-toggle="modal"><span class="glyphicon glyphicon-shopping-cart"></span> My Carrito <span class="new badge">1</span></a></li>
+      <li>
+      <div class="dropdown">
+ <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> User
+ <span class="caret"></span></button>
+ <ul class="dropdown-menu">
+   <li ><a href="#" id="bMyphones"><span class="glyphicon glyphicon-phone"></span> My Phones</a></li>
+   <li ><a href="#" id="bMyinfomation"><span class="glyphicon glyphicon-file"></span> My information</a></li>
+   <li ><a href="#" id="bConfiguration"><span class="glyphicon glyphicon-cog"></span> Configuration</a></li>
+     <li class="divider"></li>
+       <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> log out</a></li>
+
+ </ul>
+
+   
+</div>
+</li>
+<li >"        "</li>
+<li class="divider"></li>
+<li class="round-image-70">
+     <img src="images/sony.jpg" class="img-circle" WIDTH=40 HEIGHT=40 alt="">
+</li>
+
+</ul>
+               </form>
+
+			
+
+
+
+
+
+
+		</div>
+
+	</div>
+	</nav>
+
+</header>
+
+<div class= "container" id="principal">
+   <div class="row">
+		<br>
+		<div class="col-md-7" WIDTH=40 HEIGHT=40 id="carousselprin">
+			<div id="carousel-1" class="carousel slide" data-ride="carousel" >
+
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-1" data-slide-to="1"></li>
+				<li data-target="#carousel-1" data-slide-to="2"></li>
+				<li data-target="#carousel-1" data-slide-to="3"></li>
+			</ol>
+
+			<div class="carousel-inner" role="listbox">
+
+				<div class="item active">
+				      <br>
+					<img src="images/iphone.png" class="img-responsive" WIDTH=1000 HEIGHT=600 alt="">
+					 <div class="carousel-caption" id="diApple">
+					 	<a href="#"><h1 class="yo">APPLE</h1></a>
+					 	
+					 	<p class="yo2">Elegante y sofisticado</p>
+					 </div>
+					</div>
+
+
+					<div class="item">
+					<br>
+					<img src="images/sony.jpg" class="img-responsive" alt="">
+					 <div class="carousel-caption" id="diSony">
+					     <a href="#"><h1 class="yo">SONY</h1></a>
+					     
+					 	<p class="yo2">Vivaz y potente</p>
+					 </div>
+					</div>
+
+					<div class="item">
+					<br>
+					<img src="images/Huawei.jpg" class="img-responsive" WIDTH=1000 HEIGHT=600 alt="">
+					 <div class="carousel-caption" id="diHua">
+					 	<a href="#"><h1 id="tituloHua" class="yo">HUAWEI </h1></a>
+					 	
+					 	<p class="yo2">Minimalista y moderno</p>
+					 </div>
+					 </div>
+
+
+					 <div class="item">
+					 <br>
+					<img src="images/samsung.jpg" class="img-responsive" WIDTH=1000 HEIGHT=600 alt="">
+					 <div class="carousel-caption" id="diSam">
+					 	<a href="#"><h1 class="yo">SAMSUNG</h1></a>
+					 	
+					 	<p class="yo2">Eficiencia y calidad</p>
+					 	
+					 </div>
+					</div>
+
+				</div>
+
+
+			</div>
+         <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+          </a>
+
+          <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+           <span class="sr-only"></span>
+          </a>
+          <br>
+			</div>
+        
+            
+
+         
+         <div class="col-md-5" id="bloques">
+           <ul>
+           	<li>
+
+
+
+           		<div class="row" id="bloque-1">
+
+           		<div class="col-md-6" id="bloqueA">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/llamada.jpg" alt="Lights" WIDTH=500 HEIGHT=334>
+        <div class="caption" id="bloqueAA">
+          <p>Atencion Telefonica</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-6" id="bloqueB">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/credito.png" alt="Lights" WIDTH=500 HEIGHT=334 >
+        <div class="caption" id="bloqueBB">
+          <p>Credito</p>
+          
+        </div>
+      </a>
+    </div>
+  </div>
+
+           			
+           		</div>
+           	</li>
+           	<li>
+           		<div class="row" id="bloque-2">
+
+           		<div class="col-md-6" id="bloqueC">
+    <div class="thumbnail" id="bloqueC">
+      <a href="#">
+        <img src="images/soporte.jpg" alt="Lights" style="width:100%">
+        <div class="caption" id="bloqueCC">
+          <p>Soporte Tecnico</p>
+          
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-6" id="bloqueD">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/sutel.jpg" alt="Lights" style="width:100%">
+        <div class="caption" id="bloqueDD">
+          <p>Certificados</p>
+          
+        </div>
+      </a>
+    </div>
+  </div>
+
+           			
+           		</div>
+           	</li>
+           </ul>
+         
+         
+         </div>
+         
+		
+        </div>
+
+        
+      <br>
+	<div >
+	
+		<div class="row" id="Novedades">
+		<h1>Novedades</h1>
+		<div class="col-md-3">
+
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Sony/Son2.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+
+          <p>SONY XPERIA XZ F8331</p>
+          <p>Price: 300.ooo colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Sony/Son1.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>SONY XPERIA XA F3113</p>
+          <p>Price: 150.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Huawei/Hua3.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>HUAWEI NOVA PLUS</p>
+          <p>Price: 200.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+    <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Apple/Ap1.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>APPLE IPHONE 6S </p>
+          <p>Price:¢400.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<br>
+
+		<div class="row" id="Ofertas">
+		<h1>Ofertas</h1>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Apple/Ap2.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>APPLE IPHONE 7 PLUS </p>
+          <p>Price:540.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Sony/Son4.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>SONY XPERIA M5 E5606</p>
+          <p>Price:170.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Samsung/Sam4.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>SAMSUNG GALAXY A5 (2017) </p>
+          <p>Price:200.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+    <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Samsung/Sam3.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>SAMSUNG GALAXY A7 (2017) </p>
+          <p>Price:230.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+    
+	</div>
+
+	<div class="fade modal" id="Carrito">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h2 class="modal-title" id="myModalLabel">Carrito</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <fieldset id="modConRegis">
+                                <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <table class="table table-hover table-striped" id="modConRegis">
+                            <tbody>
+                             <tr>
+                             <th></th>
+                             <th> Marca y modelo</th>
+                             <th> Imagen</th>
+                             <th>Nombre y precio</th>
+                             <th>Colores</th>
+                             <th>Descripcion</th>
+                             <th>Acciones</th>
+
+                               
+                             </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#"><span class="glyphicon glyphicon-phone">
+                                          
+                                        </span> </a>
+                                    </td>
+                                    <td>
+                                        <h4>
+                                            <b>SONY</b>
+                                        </h4>
+                                        <p>Z1-67fh</p>
+                                    </td>
+                                    <td>
+                                        <img src="http://api.sonymobile.com/files/xperia-Z1-hero-white-1240x840-f9b9916d16a90faba4e6e2fc3de5e289.jpg" class="img-circle" width="60">
+                                    </td>
+                                    <td>
+                                        <h4>
+                                            <b>Sony Z1</b>
+                                        </h4>
+                                        <b href="">150.000</b>
+                                    </td>
+                                    <td>
+                                    <ul>
+                                      <li>Negro
+                                      </li>
+                                      <li>Blanco</li>
+                                    </ul>
+
+                                    </td>
+                                    <td>
+                                     <textarea si>
+                                       
+                                     </textarea>
+                                      
+                                    </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-default" value="left" type="button">
+                                                <i class="glyphicon glyphicon-remove"></i>Eliminar</button>
+                                            
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                
+                            </tbody>
+                        </table>
+                        <div class="row">
+                                   <div class="col-md-10">
+                                   	
+                                   </div>
+
+                                   <div class="col-md-1">
+                                   <button class="btn btn-primary" value="left" type="button" ><span class="glyphicon glyphicon-credit-card"></span>
+                                     Comprar
+                                   	
+                                   </button>
+                                   	
+                                   </div>
+                                   
+                                  	
+                                  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                                
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+ <div id="diProductos" class="container">
+  <div class="row">
+    <div class="col-sm-2">
+       <div class="list-group">
+        <a href="#" class="list-group-item" id="etiOfertas">Ofertas</a>
+         <a href="#" class="list-group-item disabled"></a>
+         <a href="#" class="list-group-item" id="etiNovedades" >Novedades</a>
+         <a href="#" class="list-group-item disabled">Fabricantes</a>
+         <a href="#" class="list-group-item" id="etiAPPLE">APPLE</a>
+         <a href="#" class="list-group-item" id="etiHUaWEI">HUAWEI</a>
+         <a href="#" class="list-group-item" id="etiSAMSUNG">SAMSUNG</a>
+         <a href="#" class="list-group-item" id="etiSONY">SONY</a>
+         
+
+       </div>
+      
+    </div>
+     <div class="col-md-10" id="listas">
+     <div class="row">
+        <div class="col-md-4">
+          
+        </div>
+        <div class="col-md-2 text-right">
+          <label class="control-label" for="input-sort">Orden:</label>
+        </div>
+        <div class="col-md-3 text-right">
+          <select id="input-sort" class="form-control" onchange="location = this.value;">
+                                    <option value="#">Predeterminado</option>
+                                                <option value="#">Nombre (A - Z)</option>
+                                                <option value="">Nombre (Z - A)</option>
+                                                <option value="#" selected="selected">Precio (Bajo &gt; Alto)</option>
+                                                <option value="#">Precio (Alto &gt; Bajo)</option>
+                                                <option value="#">Modelo (A - Z)</option>
+                                                <option value="#">Modelo (Z - A)</option>
+                                  </select>
+        </div>
+        <div class="col-md-1 text-right">
+          <label class="control-label" for="input-limit">Mostrar:</label>
+        </div>
+        <div class="col-md-2 text-right">
+          <select id="input-limit" class="form-control" onchange="location = this.value;">
+                                    <option value="#" selected="selected">25</option>
+                                                <option value="#">50</option>
+                                                <option value="#">75</option>
+                                                <option value="#">100</option>
+                                  </select>
+        </div>
+        <br>
+
+        <div class="col-md-12" id="listaOfertas">
+           <div class="row" id="lOfertas">
+		<h1>Ofertas</h1>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Apple/Ap2.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>APPLE IPHONE 7 PLUS </p>
+          <p>Price:540.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Sony/Son4.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>SONY XPERIA M5 E5606</p>
+          <p>Price:170.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Samsung/Sam4.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>SAMSUNG GALAXY A5 (2017) </p>
+          <p>Price:200.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+    <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Samsung/Sam3.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>SAMSUNG GALAXY A7 (2017) </p>
+          <p>Price:230.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+         
+         
+         </div>
+         <div class="col-md-12" id="listaSamsung">
+           <div class="row" id="lSamsung">
+		<h1>Samsung</h1>
+  
+  
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Samsung/Sam4.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>SAMSUNG GALAXY A5 (2017) </p>
+          <p>Price:200.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+    <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Samsung/Sam3.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>SAMSUNG GALAXY A7 (2017) </p>
+          <p>Price:230.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+         
+         
+         </div>
+
+          <div class="col-md-12" id="listaAPPLE">
+           <div class="row" id="lOfertas">
+		<h1>APPLE</h1>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Apple/Ap2.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>APPLE IPHONE 7 PLUS </p>
+          <p>Price:540.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Apple/Ap1.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>APPLE IPHONE 6S </p>
+          <p>Price:¢400.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  
+    
+</div>
+         
+         
+         </div>
+
+          <div class="col-md-12" id="listaNovedades">
+           <div class="row" id="lNovedades">
+		<h1>Novedades</h1>
+  
+  <div class="col-md-4">
+
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Sony/Son2.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+
+          <p>SONY XPERIA XZ F8331</p>
+          <p>Price: 300.ooo colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Sony/Son1.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>SONY XPERIA XA F3113</p>
+          <p>Price: 150.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Huawei/Hua3.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>HUAWEI NOVA PLUS</p>
+          <p>Price: 200.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+    <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Apple/Ap1.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>APPLE IPHONE 6S </p>
+          <p>Price:¢400.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+    
+</div>
+         
+         
+         </div>
+
+           <div class="col-md-12" id="listaSONY">
+           <div class="row" id="lSony">
+		<h1>SONY</h1>
+  
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Sony/Son4.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>SONY XPERIA M5 E5606</p>
+          <p>Price:170.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Sony/Son2.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+
+          <p>SONY XPERIA XZ F8331</p>
+          <p>Price: 300.ooo colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Sony/Son1.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>SONY XPERIA XA F3113</p>
+          <p>Price: 150.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Sony/Son3.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>SONY XPERIA X </p>
+          <p>Price: 250.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+    
+</div>
+         
+         
+         </div>
+
+          <div class="col-md-12" id="listaHUaWEI">
+           <div class="row" id="lHuawei">
+		<h1>HUAWEI</h1>
+		<div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Huawei/Hua3.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>HUAWEI NOVA PLUS</p>
+          <p>Price: 200.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+    <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Huawei/Hua1.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>HUAWEI P8 Lite</p>
+          <p>Price: 100.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Huawei/Hua3.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>HUAWEI P10 Lite</p>
+          <p>Price: 185.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="images/Huawei/Hua4.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>HUAWEI MATE 9</p>
+          <p>Price: 350.000 colones</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+</div>
+         
+         
+         </div>
+
+
+      </div>
+     </div>
+    
+  </div>
+ <br>
+</div>
+ 
+
+
+<section class="main container"> </section>
+
+<footer>
+<div class="container-" id="parteInferior">
+    <div class="row">
+            <div class="col-sm-4">
+        
+        <ul class="list-unstyled" id="futInformacion1">
+                  <h5>Información</h5>
+                  <hr>
+                    <li ><a href="#" >Cotizacion</a></li>
+                    <li clas="listita"><a href="#">Directorio</a></li>
+                    <li clas="listita"><a href="#">Formas de Envío</a></li>
+                    
+                    <li clas="listita"><a href="#">INFO GENERAL CREDITOS !</a></li>
+                    <li clas="listita"><a href="#">Métodos de Pago</a></li>
+                    
+                    <li clas="listita"><a href="#">About us</a>
+                     </li>
+                    
+                  </ul>
+      </div>
+         <div class="col-sm-3" id="futInformacion2">
+       
+        <ul class="list-unstyled">
+         <h5>Servicio al Cliente</h5>
+         <hr>
+          <li clas="listita"><a href="#">Soporte tecnico</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-sm-3" >
+        <h5>Mi Cuenta</h5>
+        <hr>
+        <ul class="list-unstyled" id="futInformacion3">
+          <li clas="listita"><a href="#">Mi Cuenta</a></li>
+          <li clas="listita"><a href="#">Pedido</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <hr>
+    
+    <br>
+      <p id="textofinal">www.XenonStore.cr</p>
+  </div>
+	
+</footer>
+
+</body>
+</html>
